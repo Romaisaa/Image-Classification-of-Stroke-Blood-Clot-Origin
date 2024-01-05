@@ -1,6 +1,7 @@
 from src.models.helpers import FireModule as Fire
 import pytorch_lightning as pl
 import torch.nn as nn
+import torch.optim as optim
 
 
 class SqueezeNet(pl.LightningModule):
