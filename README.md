@@ -16,7 +16,11 @@ Problem related to [STRIP-AI](https://www.kaggle.com/competitions/mayo-clinic-st
   <p align="center">
   <img src="reports/figures/Data_classes_distribution.png" alt="Image">
 </p>
- To tackle the challenges of limited, imbalanced, and variable-sized stroke clot images, we leveraged data augmentation. We sliced each high-resolution image into multiple resized tiles, discarding images without important information. Crucially, we applied data augmentation differently for each stroke type: one rotation for cardioembolic (CE) clots and three rotations for large artery atherosclerosis (LAA) clots, effectively balancing the dataset and boosting training data volume. This strategy helped our get 4313 final image.
+ To tackle the challenges of limited, imbalanced, and variable-sized stroke clot images, we leveraged data augmentation. 
+ <p align="center">
+  <img src="reports/figures/Data preprocessing.png" alt="Image">
+</p>
+ effectively balancing the dataset and boosting training data volume( 4313 final images).
 
 
 ### Model Structure
