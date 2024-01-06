@@ -30,7 +30,7 @@ Ensemble learning between ResNet and SqueezeNet
 1. SqueezeNet Model:
 
 <p align="center">
-  <img src="reports/figures/ResNet50-model.png" alt="Image">
+  <img src="reports/figures/SqueezeNet.png" alt="Image">
 </p>
 
 Test Pipeline for one test image:
