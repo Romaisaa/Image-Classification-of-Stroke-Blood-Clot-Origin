@@ -12,6 +12,12 @@
 ### Overview
 Problem related to [STRIP-AI](https://www.kaggle.com/competitions/mayo-clinic-strip-ai) competition, to classify the blood clot origins in ischemic stroke. Using whole slide digital pathology images to differentiates between the two major acute ischemic stroke (AIS) etiology subtypes: cardiac and large artery atherosclerosis (CE - LAA).
 ### Data
+ [The data](https://www.kaggle.com/competitions/mayo-clinic-strip-ai/data) comprises 754 high-resolution whole-slide digital pathology images in TIF format, categorizing stroke origin as either CE or LAA , but have size variations and the distribution of the classes is not balanced that need careful handling.
+  <p align="center">
+  <img src="reports/figures/Data_classes_distribution.png" alt="Image">
+</p>
+ To tackle the challenges of limited, imbalanced, and variable-sized stroke clot images, we leveraged data augmentation. We sliced each high-resolution image into multiple resized tiles, discarding images without important information. Crucially, we applied data augmentation differently for each stroke type: one rotation for cardioembolic (CE) clots and three rotations for large artery atherosclerosis (LAA) clots, effectively balancing the dataset and boosting training data volume. This strategy helped our get 4313 final image.
+
 
 ### Model Structure
 Ensemble learning between ResNet and SqueezeNet
