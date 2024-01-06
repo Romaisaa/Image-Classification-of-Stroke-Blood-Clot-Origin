@@ -3,12 +3,36 @@
 ## Table of contents:
 
 - [Overview](#overview)
+- [Data](#data)
+- [Model Stucture](#model-structure)
+- [Results](#results)
 - [Project Structure](#project-structure)
-- [Team]()
+- [Team](#team)
 
 ### Overview
+Problem related to [STRIP-AI](https://www.kaggle.com/competitions/mayo-clinic-strip-ai) competition, to classify the blood clot origins in ischemic stroke. Using whole slide digital pathology images to differentiates between the two major acute ischemic stroke (AIS) etiology subtypes: cardiac and large artery atherosclerosis (CE - LAA).
+### Data
 
+### Model Structure
+Ensemble learning between ResNet and SqueezeNet
+1. ResNet50 Model:
 
+<p align="center">
+  <img src="reports/figures/ResNet50-model.png" alt="Image">
+</p>
+
+1. SqueezeNet Model:
+
+<p align="center">
+  <img src="reports/figures/ResNet50-model.png" alt="Image">
+</p>
+
+Test Pipeline for one test image:
+<p align="center">
+  <img src="reports/figures/test-pipeline.png" alt="Image">
+</p>
+
+### Results
 
 ### Project Structure
 
@@ -52,12 +76,12 @@ main
 
 First Semester - Artificial Neural Networks in Medicine (SBE4025) class project created by:
 
-| Team Members' Names                                    | Code | 
-| ------------------------------------------------------ | :-----: | 
-| [Ahmed Hassan](https://github.com/ahmedhassan187) |    9202076    |
-| [Habiba Fathallah](https://github.com/Habibafathalla)     |    9202458    |  
-| [Rawan Mohamed](https://github.com/RawanFekry)   |    9202559    |  
-| [Romaisaa Saad](https://github.com/Romaisaa)         |    9202564    |  
+  | Team Members' Names                                    | Code | 
+  | ------------------------------------------------------ | :-----: | 
+  | [Ahmed Hassan](https://github.com/ahmedhassan187) |    9202076    |
+  | [Habiba Fathallah](https://github.com/Habibafathalla)     |    9202458    |  
+  | [Rawan Mohamed](https://github.com/RawanFekry)   |    9202559    |  
+  | [Romaisaa Saad](https://github.com/Romaisaa)         |    9202564    |  
 ### Submitted to:
 
 - Dr. Inas Yassine & Eng. Merna Biabers
