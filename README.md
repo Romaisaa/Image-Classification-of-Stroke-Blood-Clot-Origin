@@ -7,6 +7,7 @@
 - [Model Stucture](#model-structure)
 - [Results](#results)
 - [Project Structure](#project-structure)
+- [Project Run](#project-run)
 - [Team](#team)
 
 ### Overview
@@ -115,6 +116,17 @@ main
 │          └─  FireModule.py
 └─ README.md
 ```
+### Project Run
+Currentky you can run and test project through these notebooks on kaggle using competition [data](https://www.kaggle.com/competitions/mayo-clinic-strip-ai/data) :
+```
+main
+└─  notebooks
+   ├─  Data Preprocessing Approach 2.ipynb
+   ├─  RestNet5_training_kaggle.ipynb 
+   ├─  SqueezeNet_training_kaggle.ipynb
+   └─  test-evaluation.ipynb
+```
+
 
 
 ### Team
