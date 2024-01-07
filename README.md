@@ -7,12 +7,16 @@
 - [Model Stucture](#model-structure)
 - [Results](#results)
 - [Project Structure](#project-structure)
+- [Project Run](#project-run)
 - [Team](#team)
 
 ### Overview
-Problem related to [STRIP-AI](https://www.kaggle.com/competitions/mayo-clinic-strip-ai) competition, to classify the blood clot origins in ischemic stroke. Using whole slide digital pathology images to differentiates between the two major acute ischemic stroke (AIS) etiology subtypes: cardiac and large artery atherosclerosis (CE - LAA).
+Problem related to [STRIP-AI](https://www.kaggle.com/competitions/mayo-clinic-strip-ai) competition, to classify the blood clot origins in ischemic stroke. Using whole slide digital pathology images to differentiate between the two major acute ischemic stroke (AIS) etiology subtypes: cardiac and large artery atherosclerosis (CE - LAA).
+You can find checkpoints on 
+- [SqueezeNet](https://www.kaggle.com/datasets/ahmedhassan02/squeeze-model)
+- [ResNet50](https://www.kaggle.com/datasets/ahmedhassan02/resnet50-model)
 ### Data
- [The data](https://www.kaggle.com/competitions/mayo-clinic-strip-ai/data) comprises 754 high-resolution whole-slide digital pathology images in TIF format, categorizing stroke origin as either CE or LAA , but have size variations and the distribution of the classes is not balanced that need careful handling.
+ [The data](https://www.kaggle.com/competitions/mayo-clinic-strip-ai/data) comprises 754 high-resolution whole-slide digital pathology images in TIF format, categorizing stroke origin as either CE or LAA, but have size variations and the distribution of the classes is not balanced that need careful handling.
   <p align="center">
   <img src="reports/figures/Data_classes_distribution.png" alt="Image">
 </p>
@@ -43,7 +47,48 @@ Test Pipeline for one test image:
 </p>
 
 ### Results
+In This part, we will see some results of each model we tried.
+1. Confusion Matrix
+   
+- Confusion Matrix for results of SqueezeNet Model:
+<p align="center">
+  <img src="reports/figures/Confusion_Matrix_Squeeze.png" alt="Image">
+</p>
 
+- Confusion Matrix for results of ResNet50 Model:
+<p align="center">
+  <img src="reports/figures/Confusion_Matrix_ResNet50.png" alt="Image">
+</p>
+
+- Confusion Matrix for results of Ensemble Model:
+<p align="center">
+  <img src="reports/figures/Confusion_Matrix_Ensemble.png" alt="Image">
+</p>
+2. ROC Curve
+
+- ROC Curve for results of SqueezeNet Model with AUC = 0.65 :
+<p align="center">
+  <img src="reports/figures/ROC_Curve_Squeeze.png" alt="Image">
+</p>
+
+- ROC Curve for results of ResNet50 Model with AUC = 0.69 :
+<p align="center">
+  <img src="reports/figures/ROC_Curve_ResNet50.png" alt="Image">
+</p>
+
+- ROC Curve for results of Ensemble Model with AUC = 0.75 :
+<p align="center">
+  <img src="reports/figures/ROC_Curve_Ensemble.png" alt="Image">
+</p>
+3. Other metrices
+
+  | Metric    | Score | 
+  | --------- | :-----: | 
+  | Precision |  0.833  |
+  | Recall    |  0.714  |
+  | F1 Score  |  0.769  |
+  | Accuracy  |  0.700  |
+  |Specificity|  0.666  |
 ### Project Structure
 
 ```
@@ -80,6 +125,17 @@ main
 │          └─  FireModule.py
 └─ README.md
 ```
+### Project Run
+Currently you can run and test project through these notebooks on Kaggle using competition [data](https://www.kaggle.com/competitions/mayo-clinic-strip-ai/data) :
+```
+main
+└─  notebooks
+   ├─  Data Preprocessing Approach 2.ipynb
+   ├─  RestNet5_training_kaggle.ipynb 
+   ├─  SqueezeNet_training_kaggle.ipynb
+   └─  test-evaluation.ipynb
+```
+
 
 
 ### Team
