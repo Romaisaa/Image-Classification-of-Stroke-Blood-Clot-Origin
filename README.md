@@ -61,7 +61,7 @@ main
 │  ├─  EfficientNet_training_kaggle.ipynb
 │  ├─  RestNet5_training_kaggle.ipynb
 │  ├─  SqueezeNet_training_kaggle.ipynb
-│  └─  test_for_all_models.ipynb
+│  └─  test-evaluation.ipynb
 ├─ reports
 │  ├─  Paper.pdf
 |  └─   figures
