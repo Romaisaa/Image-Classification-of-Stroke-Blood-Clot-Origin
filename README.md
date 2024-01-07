@@ -43,7 +43,42 @@ Test Pipeline for one test image:
 </p>
 
 ### Results
+In This part, we will see some results of each model we tried.
+1. Confusion Matrix
+- Confusion Matrix for results of SqueezeNet Model:
+<p align="center">
+  <img src="reports/figures/Confusion_Matrix_Squeeze.png" alt="Image">
+</p>
+- Confusion Matrix for results of ResNet50 Model:
+<p align="center">
+  <img src="reports/figures/Confusion_Matrix_ResNet50.png" alt="Image">
+</p>
+- Confusion Matrix for results of Ensemble Model:
+<p align="center">
+  <img src="reports/figures/Confusion_Matrix_Ensemble.png" alt="Image">
+</p>
+2. ROC Curve
+- ROC Curve for results of SqueezeNet Model with AUC = 0.65 :
+<p align="center">
+  <img src="reports/figures/ROC_Curve_Squeeze.png" alt="Image">
+</p>
+- ROC Curve for results of ResNet50 Model with AUC = 0.69 :
+<p align="center">
+  <img src="reports/figures/ROC_Curve_ResNet50.png" alt="Image">
+</p>
+- ROC Curve for results of Ensemble Model with AUC = 0.75 :
+<p align="center">
+  <img src="reports/figures/ROC_Curve_Ensemble.png" alt="Image">
+</p>
+3. Other metrices
 
+  | Metric    | Score | 
+  | --------- | :-----: | 
+  | Precision |  0.833  |
+  | Recall    |  0.714  |
+  | F1 Score  |  0.769  |
+  | Accuracy  |  0.700  |
+  |Specificity|  0.666  |
 ### Project Structure
 
 ```
